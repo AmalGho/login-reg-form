@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="form">
+            <ul class="tabs">
+                <li class="active" data-cont=".log-in">log in</li>
+                <li data-cont=".sign-up">sign up</li>
+            </ul>
+            <div class="content">
+
+                <form class="log-in" >
+                    <label for="username">Username</label>
+                    <input type="text" name="username" required>  
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required>
+                    <div class="btns">
+                        <a href="#" class="option-btn">forget password ?</a>
+                        <input type="submit" class="btn" value="LOG IN">
+                    </div>
+                </form>
+
+                <form class="sign-up">
+
+                    <!-- accept name contains 3 and more char -->
+                    <label for="name">Name <abbr title="This field is required" aria-label="required">*</abbr></label>
+                    <input type="text" name="name" minlength="3" required> 
+
+                    <!-- required -->
+                    <label for="username">Username <abbr title="This field is required" aria-label="required">*</abbr></label>
+                    <input type="text" name="username" required>  
+
+                    <!-- required -->
+                    <label for="email">Email <abbr title="This field is required" aria-label="required">*</abbr> </label>
+                    <input type="email" name="email" id="mail" required> 
+
+                    <!-- has pattern -->
+                    <label for="password">Password <abbr title="This field is required" aria-label="required">*</abbr></label>
+                    <input type="password" id="password" required>
+
+                    <!-- matches password -->
+                    <label for="confirmpassword">confirm password <abbr title="This field is required" aria-label="required">*</abbr></label>
+                    <input type="password" id="confirmpassword" required>
+
+                    <div class="btns">
+                        <input type="submit" id="sign-up" class="btn" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<script src="main.js"></script>
+</body>
+</html>
