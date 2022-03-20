@@ -3,4 +3,4 @@
 - form validation using javascript.
 - check email format.
 - the password has specific pattern.
-- you can view the form in deployment.
+- the form deployed in github-pages.
